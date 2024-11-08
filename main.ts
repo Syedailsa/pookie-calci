@@ -1,8 +1,8 @@
 let display = document.getElementById("display") as HTMLInputElement;
 
-let firstValue: string = "";   // To store the first number
-let secondValue: string = "";  // To store the second number
-let operator: string = "";     // To store the selected operator
+let firstValue: string = "";   // To store the first num
+let secondValue: string = "";  // To store the second num
+let operator: string = "";     // To store the operator
 let isOperatorClicked = false; // To check if the operator has been clicked
 
 function appendToDisplay(input: string) {
@@ -47,11 +47,11 @@ function Calculate() {
                 return;
         }
 
-        // Display the result and reset values for new calculation
+        // Display the result and reset for new calculation
         display.value = result.toString();
 
         firstValue = result.toString(); 
-        // firstValue set as result to ensure further calculation
+        // first value set as result to ensure further calculation
 
         secondValue = "";
         operator = "";
